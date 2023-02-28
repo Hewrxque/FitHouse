@@ -17,12 +17,27 @@ const styles = StyleSheet.create({
   },
   text: {
     textAlign: 'center',
+    color: '#00FF19',
+    fontSize: 20,
+    fontFamily: 'Krona One',
+  },
+  text2: {
+    textAlign: 'center',
     color: '#181616',
     fontSize: 20,
     fontFamily: 'Krona One',
   },
   button: {
-    backgroundColor: '#00FF19',
+    backgroundColor: '#1E1E1E',
+    width: 270,
+    height: 40,
+    borderRadius: 10,
+    borderColor: '#00FF19',
+    borderWidth: 2,
+    
+  },
+  button2: {
+    backgroundColor: '#ffffff',
     width: 270,
     height: 40,
     borderRadius: 10,
