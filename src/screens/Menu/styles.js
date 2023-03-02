@@ -7,14 +7,13 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    width: width,
-    height: height,
     backgroundColor: '#181616',
+    paddingTop: 15,
   },
   image: {
     width: 262,
     height: 44,
-    top: 20,
+    paddingTop: 15,
   },
   text: {
     textAlign: 'center',
@@ -29,25 +28,12 @@ const styles = StyleSheet.create({
     fontFamily: 'Krona One',
   },
   button: {
-    backgroundColor: '#1E1E1E',
-    width: 270,
-    height: 40,
-    borderRadius: 10,
-    borderColor: '#00FF19',
-    borderWidth: 2,
-    marginBottom: 20
-  },
-  button2: {
     backgroundColor: '#ffffff',
-    width: 270,
-    height: 40,
+    width: 140,
+    height: 116,
     borderRadius: 10,
+    textAlign: 'center'
   },
-  content:{
-    width: "100%",
-    paddingTop: 50,
-    padding: 16,
-},
 });
 
 export default styles;
