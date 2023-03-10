@@ -1,18 +1,45 @@
 import {StyleSheet, Dimensions} from 'react-native';
-
-const {height, width} = Dimensions.get('window');
-
+const {height} = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingHorizontal: 20,
+    backgroundColor: '#181616',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#181616',
-    paddingTop: 15,
+    height: height,
   },
   image: {
     width: 262,
     height: 44,
+  },
+  input: {
+    backgroundColor: '#1E1E1E',
+    width: 350,
+    height: 52,
+    borderRadius: 8,
+    borderColor: '#00FF19',
+    borderWidth: 2,
+    marginBottom: 20,
+    paddingHorizontal: 8,
+  },
+  back: {
+    position: 'absolute',
+    bottom: 50,
+    right: 140,
+  },
+  button: {
+    width: 281,
+    height: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#FFFFFF',
+    borderRadius: 10,
+    elevation: 10,
+  },
+  bottonText: {
+    fontFamily: 'Rubik-One',
+    fontSize: 22,
   },
   text: {
     textAlign: 'center',
@@ -26,22 +53,9 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontFamily: 'Krona One',
   },
-  button: {
-    backgroundColor: '#ffffff',
-    width: 270,
-    height: 40,
-    borderRadius: 10,
+  arrow: {
+    bottom: 50,
+    paddingRight: 300,
   },
-  input:{
-    backgroundColor: '#1E1E1E',
-    width: 300,
-    height: 52,
-    borderRadius: 8,
-    borderColor: '#00FF19',
-    borderWidth: 2,
-    marginBottom: 20,
-    paddingHorizontal: 8
-  }
 });
-
 export default styles;

@@ -5,10 +5,11 @@ const {height, width} = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingHorizontal: 20,
+    backgroundColor: '#181616',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#181616',
-    paddingTop: 15,
+    height: height,
   },
   image: {
     width: 262,

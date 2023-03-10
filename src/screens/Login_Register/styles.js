@@ -5,11 +5,11 @@ const {height, width} = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingHorizontal: 20,
+    backgroundColor: '#181616',
     alignItems: 'center',
     justifyContent: 'center',
-    width: width,
     height: height,
-    backgroundColor: '#181616',
   },
   image: {
     width: 262,
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     borderColor: '#00FF19',
     borderWidth: 2,
-    marginBottom: 20
+    marginBottom: 20,
   },
   button2: {
     backgroundColor: '#ffffff',
@@ -43,11 +43,15 @@ const styles = StyleSheet.create({
     height: 40,
     borderRadius: 10,
   },
-  content:{
-    width: "100%",
+  content: {
+    width: '100%',
     paddingTop: 50,
     padding: 16,
-},
+  },
+  arrow: {
+    bottom: 50,
+    paddingRight: 300,
+  },
 });
 
 export default styles;
