@@ -36,21 +36,15 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     elevation: 10,
   },
-  bottonText: {
-    fontFamily: 'Rubik-One',
-    fontSize: 22,
-  },
   text: {
     textAlign: 'center',
     color: '#181616',
     fontSize: 20,
-    fontFamily: 'Krona One',
   },
   text2: {
     textAlign: 'left',
     color: '#ffffff',
     fontSize: 15,
-    fontFamily: 'Krona One',
   },
 });
 export default styles;

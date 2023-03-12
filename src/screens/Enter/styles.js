@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#181616',
     fontSize: 20,
-    fontFamily: 'Krona One',
   },
   button: {
     backgroundColor: '#00FF19',
