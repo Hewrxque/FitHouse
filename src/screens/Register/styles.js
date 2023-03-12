@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   arrow: {
     position: 'absolute',
     top: 20,
-    left: 11
+    left: 11,
   },
   input: {
     backgroundColor: '#1E1E1E',
@@ -25,7 +25,6 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     borderColor: '#00FF19',
     borderWidth: 2,
-    marginBottom: 20,
     paddingHorizontal: 8,
   },
   button: {
@@ -46,6 +45,15 @@ const styles = StyleSheet.create({
     textAlign: 'left',
     color: '#ffffff',
     fontSize: 15,
+  },
+  wrapperInput: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  wrapperIcon: {
+    position: 'absolute',
+    right: 0,
+    padding: 10,
   },
 });
 export default styles;
