@@ -28,53 +28,6 @@ export default function Login({navigation}) {
       setCheckValidEmail(true);
     }
   };
-  const checkPasswordValidity = value => {
-    const isNonWhiteSpace = /^\S*$/;
-    if (!isNonWhiteSpace.test(value)) {
-      return 'Password must not contain Whitespaces.';
-    }
-
-    const isContainsUppercase = /^(?=.*[A-Z]).*$/;
-    if (!isContainsUppercase.test(value)) {
-      return 'Password must have at least one Uppercase Character.';
-    }
-
-    const isContainsLowercase = /^(?=.*[a-z]).*$/;
-    if (!isContainsLowercase.test(value)) {
-      return 'Password must have at least one Lowercase Character.';
-    }
-
-    const isContainsNumber = /^(?=.*[0-9]).*$/;
-    if (!isContainsNumber.test(value)) {
-      return 'Password must contain at least one Digit.';
-    }
-
-    const isValidLength = /^.{8,16}$/;
-    if (!isValidLength.test(value)) {
-      return 'Password must be 8-16 Characters Long.';
-    }
-    return null;
-  };
-  const handleLogin = () => {
-    const checkPassowrd = checkPasswordValidity(password);
-    if (!checkPassowrd) {
-      user_login({
-        email: email.toLocaleLowerCase(),
-        password: password,
-      })
-        .then(result => {
-          if (result.status == 200) {
-            AsyncStorage.setItem('AccessToken', result.data.token);
-            navigation.replace('Home');
-          }
-        })
-        .catch(err => {
-          console.error(err);
-        });
-    } else {
-      alert(checkPassowrd);
-    }
-  };
   return (
     <ScrollView style={{height: '100%'}}>
       <SafeAreaView style={styles.container}>
@@ -121,15 +74,20 @@ export default function Login({navigation}) {
               />
             </TouchableOpacity>
           </View>
-          
+
           <View style={{paddingTop: 100}}>
             <View style={{alignItems: 'center'}}>
-              <TouchableOpacity
-                onPress={() => navigation.navigate('Menu')}
-                style={styles.button}
-                onPress2={handleLogin}>
-                <Text style={styles.text}>Fazer Login</Text>
-              </TouchableOpacity>
+              {email == '' || password == '' || checkValidEmail == true ? (
+                <TouchableOpacity disabled style={styles.button}>
+                  <Text style={styles.text}>Login</Text>
+                </TouchableOpacity>
+              ) : (
+                <TouchableOpacity
+                  style={styles.button}
+                  onPress={() => navigation.navigate('Menu')}>
+                  <Text style={styles.text}>Login</Text>
+                </TouchableOpacity>
+              )}
             </View>
           </View>
         </View>
