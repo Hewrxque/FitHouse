@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   Text,
   View,
@@ -12,6 +12,24 @@ import Logo from '../../assets/FitHouse.png';
 import styles from './styles';
 import Icon from 'react-native-vector-icons/Ionicons';
 export default function Register({navigation}) {
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [seePassword, setSeePassword] = useState(false);
+  const [checkValidEmail, setCheckValidEmail] = useState(false);
+
+  const handleCheckEmail = text => {
+    let re = /\S+@\S+\.\S+/;
+    let regex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+
+    setEmail(text);
+    if (re.test(text) || regex.test(text)) {
+      setCheckValidEmail(false);
+    } else {
+      setCheckValidEmail(true);
+    }
+  };
+
   return (
     <ScrollView style={{height: '100%'}}>
       <SafeAreaView style={styles.container}>
@@ -34,8 +52,9 @@ export default function Register({navigation}) {
           </View>
           <View>
             <Text style={styles.text2}>Email:</Text>
-            <TextInput style={styles.input} placeholder="example@gmail.com" />
+            <TextInput style={styles.input} placeholder="example@gmail.com" value={email} onChangeText={handleCheckEmail}/>
           </View>
+          {checkValidEmail ? <Text style={{color: 'red'}}>Digite um email válido</Text> : <Text style={{color: 'red'}}></Text>}
           <View>
             <Text style={styles.text2}>Senha:</Text>
             <TextInput style={styles.input} placeholder="Digite sua senha" />
