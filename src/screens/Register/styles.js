@@ -1,7 +1,5 @@
 import {StyleSheet, Dimensions} from 'react-native';
-
-const {height, width} = Dimensions.get('window');
-
+const {height} = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -15,6 +13,10 @@ const styles = StyleSheet.create({
     width: 262,
     height: 44,
   },
+  arrow: {
+    bottom: 50,
+    paddingRight: 300,
+  },
   input: {
     backgroundColor: '#1E1E1E',
     width: 350,
@@ -23,12 +25,7 @@ const styles = StyleSheet.create({
     borderColor: '#00FF19',
     borderWidth: 2,
     marginBottom: 20,
-    paddingHorizontal: 8
-  },
-  back: {
-    position: 'absolute',
-    bottom: 50,
-    right: 140
+    paddingHorizontal: 8,
   },
   button: {
     width: 281,
@@ -41,7 +38,7 @@ const styles = StyleSheet.create({
   },
   bottonText: {
     fontFamily: 'Rubik-One',
-    fontSize: 22
+    fontSize: 22,
   },
   text: {
     textAlign: 'center',
@@ -54,12 +51,6 @@ const styles = StyleSheet.create({
     color: '#ffffff',
     fontSize: 15,
     fontFamily: 'Krona One',
-  },  arrow: {
-    position: 'absolute',
-    bottom: 50,
-    paddingRight: 300
   },
-
 });
-
 export default styles;

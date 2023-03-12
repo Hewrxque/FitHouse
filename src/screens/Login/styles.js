@@ -13,6 +13,10 @@ const styles = StyleSheet.create({
     width: 262,
     height: 44,
   },
+  arrow: {
+    bottom: 50,
+    paddingRight: 300,
+  },
   input: {
     backgroundColor: '#1E1E1E',
     width: 350,
@@ -22,11 +26,6 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     marginBottom: 20,
     paddingHorizontal: 8,
-  },
-  back: {
-    position: 'absolute',
-    bottom: 50,
-    right: 140,
   },
   button: {
     width: 281,
@@ -52,10 +51,6 @@ const styles = StyleSheet.create({
     color: '#ffffff',
     fontSize: 15,
     fontFamily: 'Krona One',
-  },
-  arrow: {
-    bottom: 50,
-    paddingRight: 300,
   },
 });
 export default styles;

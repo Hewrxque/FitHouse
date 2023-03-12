@@ -1,16 +1,66 @@
 import React from 'react';
-import {Text, View, SafeAreaView, Image, TouchableOpacity, TextInput} from 'react-native';
-import Logo from '../../assets/FitHouse.png';
+import {
+  Text,
+  View,
+  SafeAreaView,
+  TouchableOpacity,
+  FlatList,
+} from 'react-native';
 import styles from './styles';
-
-export default function Menu(){
-    return(
-        <SafeAreaView style={styles.container}>
-           <View style={{alignItems: "center", textAlign: 'center'}}>
-            <TouchableOpacity style={styles.button}>
-                <Text style={styles.text2}>Treinos</Text>
-            </TouchableOpacity>
-           </View>
-        </SafeAreaView>
-    )
+import Icon from 'react-native-vector-icons/FontAwesome5';
+import Icon2 from 'react-native-vector-icons/Ionicons';
+const DATA = [
+  {
+    name: 'Treinos',
+    icon: 'fire',
+    page: 'Training'
+  },
+  {
+    name: 'Dados',
+    icon: 'address-book',
+  },
+  {
+    name: 'IMC',
+    icon: 'calculator',
+    page: 'IMC'
+  },
+  {
+    name: 'F.A.Q',
+    icon: 'file-alt',
+  },
+];
+export default function Menu({navigation}) {
+  return (
+    <SafeAreaView style={styles.container}>
+      <TouchableOpacity
+        style={styles.arrow}
+        onPress={() => {
+          navigation.goBack();
+        }}>
+        <Icon2 name={'arrow-back-outline'} size={40} color={'#ffffff'} />
+      </TouchableOpacity>
+      <View style={{paddingTop: 50}} />
+      <View>
+        <Text style={styles.text}>Bom Treino</Text>
+      </View>
+      <View style={{paddingTop: 100}} />
+      <FlatList
+        data={DATA}
+        numColumns={2}
+        renderItem={({item}) => {
+          return (
+            <View style={{padding: 10}}>
+              <TouchableOpacity style={styles.button}
+               onPress={() => {
+                navigation.navigate(item.page);
+              }}>
+                <Icon name={item.icon} size={40} color={'#FFFFFF'} />
+                <Text style={styles.text2}>{item.name}</Text>
+              </TouchableOpacity>
+            </View>
+          );
+        }}
+      />
+    </SafeAreaView>
+  );
 }
