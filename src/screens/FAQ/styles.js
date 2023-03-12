@@ -18,34 +18,21 @@ const styles = StyleSheet.create({
     top: 20,
     left: 11
   },
-  input: {
-    backgroundColor: '#1E1E1E',
-    width: 350,
-    height: 52,
-    borderRadius: 8,
-    borderColor: '#00FF19',
-    borderWidth: 2,
-    marginBottom: 20,
-    paddingHorizontal: 8,
-  },
-  button: {
-    width: 281,
-    height: 50,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#FFFFFF',
-    borderRadius: 10,
-    elevation: 10,
-  },
   text: {
     textAlign: 'center',
-    color: '#181616',
-    fontSize: 20,
+    color: '#ffffff',
+    fontSize: 30,
+  },
+  text1: {
+    color: '#00FF19',
+    fontSize: 15,
+    textAlign: 'left',
   },
   text2: {
     textAlign: 'left',
     color: '#ffffff',
     fontSize: 15,
+    textAlign: "justify"
   },
 });
 export default styles;

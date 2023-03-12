@@ -14,8 +14,9 @@ const styles = StyleSheet.create({
     height: 44,
   },
   arrow: {
-    bottom: 50,
-    paddingRight: 300,
+    position: 'absolute',
+    top: 20,
+    left: 11
   },
   input: {
     backgroundColor: '#1E1E1E',

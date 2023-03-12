@@ -47,8 +47,9 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   arrow: {
-    bottom: 50,
-    paddingRight: 300,
+    position: 'absolute',
+    top: 20,
+    left: 11
   },
 });
 

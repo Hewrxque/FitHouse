@@ -5,33 +5,27 @@ const {height, width} = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingHorizontal: 20,
+    backgroundColor: '#181616',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#181616',
-    paddingTop: 15,
+    height: height,
   },
-  arrow: {
-    position: 'absolute',
-    top: 20,
-    left: 11
+  image: {
+    width: 262,
+    height: 44,
+    paddingTop: 15,
   },
   text: {
     textAlign: 'center',
-    color: '#00FF19',
-    fontSize: 30,
-  },
-  text2: {
-    textAlign: 'center',
-    color: '#FFFFFF',
+    color: '#181616',
     fontSize: 20,
   },
   button: {
-    backgroundColor: '#404040',
-    width: 160,
-    height: 160,
+    backgroundColor: '#00FF19',
+    width: 270,
+    height: 40,
     borderRadius: 10,
-    alignItems: 'center',
-    justifyContent: 'center'
   },
 });
 

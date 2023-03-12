@@ -6,6 +6,8 @@ import Register from './src/screens/Register';
 import Menu from './src/screens/Menu';
 import Training from './src/screens/Training';
 import IMC from './src/screens/IMC';
+import FAQ from './src/screens/FAQ';
+import DataB from './src/screens/DataB';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
@@ -31,6 +33,20 @@ export default function App() {
         <Stack.Screen
           name="Login"
           component={Login}
+          options={{
+            headerShown: false,
+          }}
+        />
+          <Stack.Screen
+          name="FAQ"
+          component={FAQ}
+          options={{
+            headerShown: false,
+          }}
+        />
+          <Stack.Screen
+          name="DataB"
+          component={DataB}
           options={{
             headerShown: false,
           }}

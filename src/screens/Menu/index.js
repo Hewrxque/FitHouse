@@ -18,6 +18,7 @@ const DATA = [
   {
     name: 'Dados',
     icon: 'address-book',
+    page: 'DataB'
   },
   {
     name: 'IMC',
@@ -27,6 +28,7 @@ const DATA = [
   {
     name: 'F.A.Q',
     icon: 'file-alt',
+    page: 'FAQ'
   },
 ];
 export default function Menu({navigation}) {
