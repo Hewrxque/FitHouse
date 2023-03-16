@@ -12,23 +12,35 @@ const styles = StyleSheet.create({
     height: height,
   },
   image: {
-    width: 262,
-    height: 44,
-    paddingTop: 15,
+    width: 320,
+    height: 70,
+    top: 20,
   },
   text: {
     textAlign: 'center',
-    color: '#181616',
+    color: '#00FF19',
     fontSize: 20,
   },
   button: {
-    backgroundColor: '#00FF19',
-    width: 270,
-    height: 40,
-    borderRadius: 10,
+    width: 296,
+    height: 67,
+    borderRadius: 8,
+    backgroundColor: '#404040',
+    borderColor: '#00FF19',
+    borderWidth: 2,
+    marginBottom: 20,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  content: {
+    width: '100%',
+    paddingTop: 50,
+    padding: 16,
   },
   arrow: {
-    paddingRight: 300,
+    position: 'absolute',
+    top: 20,
+    left: 11,
   },
 });
 
