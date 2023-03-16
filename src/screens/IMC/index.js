@@ -8,6 +8,7 @@ import {
   ScrollView,
   Switch,
   Alert,
+  StatusBar,
 } from 'react-native';
 import styles from './styles';
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -102,7 +103,6 @@ export default function IMC({navigation}) {
           />
           <Text style={styles.text2}>Masculino</Text>
         </View>
-        <View style={{padding: 30}} />
         <View>
           <Text style={styles.text2}>Digite sua altura:</Text>
           <TextInput
@@ -113,7 +113,7 @@ export default function IMC({navigation}) {
             onChangeText={text => setAltura(text.replace(/\D/g, ''))}
           />
         </View>
-        <View style={{padding: 10}} />
+        <View style={{padding: 10}}/>
         <View>
           <Text style={styles.text2}>Digite seu peso:</Text>
           <TextInput
@@ -124,8 +124,8 @@ export default function IMC({navigation}) {
             onChangeText={text => setPeso(text.replace(/\D/g, ''))}
           />
         </View>
-        <View style={{padding: 30}} />
-        <View>
+        <View style={{padding: 30}}/>
+        <View >
           <TouchableOpacity onPress={handleCalcular} style={styles.button}>
             <Text style={styles.text}>Calcule</Text>
           </TouchableOpacity>
