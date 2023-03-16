@@ -5,6 +5,7 @@ import styles from './styles';
 import Icon from 'react-native-vector-icons/Ionicons';
 export default function Training({navigation}) {
   return (
+    //Treinos
     <SafeAreaView style={styles.container}>
          <TouchableOpacity
         style={styles.arrow}
