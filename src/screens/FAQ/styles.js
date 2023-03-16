@@ -10,8 +10,8 @@ const styles = StyleSheet.create({
     height: height,
   },
   image: {
-    width: 262,
-    height: 44,
+    width: 320,
+    height: 70,
   },
   arrow: {
     position: 'absolute',
