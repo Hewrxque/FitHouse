@@ -11,11 +11,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     height: height,
   },
-  text1: {
-    textAlign: 'center',
-    color: '#ffffff',
-    fontSize: 20,
-  },
   image: {
     width: 320,
     height: 70,

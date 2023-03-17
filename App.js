@@ -8,6 +8,10 @@ import Training from './src/screens/Training';
 import IMC from './src/screens/IMC';
 import FAQ from './src/screens/FAQ';
 import DataB from './src/screens/DataB';
+import T_A from './src/screens/Trainings/A'
+import T_B from './src/screens/Trainings/B'
+import T_C from './src/screens/Trainings/C'
+import T_D from './src/screens/Trainings/D'
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
@@ -75,6 +79,34 @@ export default function App() {
           <Stack.Screen
           name="Menu"
           component={Menu}
+          options={{
+            headerShown: false,
+          }}
+        />
+          <Stack.Screen
+          name="T_A"
+          component={T_A}
+          options={{
+            headerShown: false,
+          }}
+        />
+         <Stack.Screen
+          name="T_B"
+          component={T_B}
+          options={{
+            headerShown: false,
+          }}
+        />
+         <Stack.Screen
+          name="T_C"
+          component={T_C}
+          options={{
+            headerShown: false,
+          }}
+        />
+         <Stack.Screen
+          name="T_D"
+          component={T_D}
           options={{
             headerShown: false,
           }}
