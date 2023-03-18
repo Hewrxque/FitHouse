@@ -13,11 +13,11 @@ export default function DataB({navigation}) {
           }}>
           <Icon name={'arrow-back-outline'} size={40} color={'#ffffff'} />
         </TouchableOpacity>
-   <View style={{bottom: 260}}>
+   <View style={{bottom: 200}}>
      <Text style={styles.text} >Dados</Text>
     
      </View>
-   <View  style={{padding: 10}}>
+   <View  style={{padding: 10, }}>
     <Text  style={styles.text1}>Nome</Text>
    </View>
    <View  style={{padding: 10}}>

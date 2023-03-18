@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   text1: {
     color: '#00FF19',
     fontSize: 15,
-    right: 50,
+    right: 150,
     fontFamily: 'KronaOne-Regular'
   },
   text2: {

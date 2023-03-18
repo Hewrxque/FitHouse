@@ -120,7 +120,7 @@ export default function IMC({navigation}) {
           <TextInput
             keyboardType="number-pad"
             style={styles.input}
-            placeholder="ex: 69kg"
+            placeholder="ex: 69"
             value={peso}
             onChangeText={text => setPeso(text.replace(/\D/g, ''))}
           />
