@@ -26,6 +26,8 @@ const styles = StyleSheet.create({
     borderColor: '#00FF19',
     borderWidth: 2,
     paddingHorizontal: 8,
+    fontSize: 15,
+    fontFamily: 'KronaOne-Regular'
   },
   button: {
     width: 281,
@@ -35,21 +37,25 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
     borderRadius: 10,
     elevation: 10,
+    
   },
   text1: {
     textAlign: 'center',
     color: '#ffffff',
     fontSize: 30,
+    fontFamily: 'KronaOne-Regular'
   },
   text: {
     textAlign: 'center',
     color: '#181616',
     fontSize: 20,
+    fontFamily: 'KronaOne-Regular'
   },
   text2: {
     textAlign: 'left',
     color: '#ffffff',
     fontSize: 15,
+    fontFamily: 'KronaOne-Regular'
   },
   wrapperInput: {
     flexDirection: 'row',

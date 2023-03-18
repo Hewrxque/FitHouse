@@ -29,10 +29,10 @@ export default function Login({navigation}) {
         </TouchableOpacity>
 
         <Image style={styles.image} source={Logo} />
-        <View style={{paddingTop: 100}}>
-          <View>
-            <Text style={styles.text3}>DIGITE SUA NOVA SENHA</Text>
-          </View>
+        <View style={{top: 50}}>
+          <Text style={styles.text3}>DIGITE SUA NOVA SENHA</Text>
+
+          <View style={{padding: 10}} />
           <Text style={styles.text2}>Senha:</Text>
           <View style={styles.wrapperInput}>
             <TextInput
@@ -52,6 +52,7 @@ export default function Login({navigation}) {
               />
             </TouchableOpacity>
           </View>
+          <View style={{padding: 10}} />
           <Text style={styles.text2}>Repita Senha:</Text>
           <View style={styles.wrapperInput}>
             <TextInput

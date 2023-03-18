@@ -1,7 +1,5 @@
 import {StyleSheet, Dimensions} from 'react-native';
-
-const {height, width} = Dimensions.get('window');
-
+const {height} = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -12,21 +10,36 @@ const styles = StyleSheet.create({
     height: height,
   },
   image: {
-    width: 262,
-    height: 44,
-    paddingTop: 15,
+    width: 320,
+    height: 70,
+  },
+  arrow: {
+    position: 'absolute',
+    top: 20,
+    left: 11
   },
   text: {
     textAlign: 'center',
-    color: '#181616',
-    fontSize: 20,
+    color: '#ffffff',
+    fontSize: 30,
+    fontFamily: 'KronaOne-Regular'
   },
-  button: {
-    backgroundColor: '#00FF19',
-    width: 270,
-    height: 40,
-    borderRadius: 10,
+  text1: {
+    color: '#00FF19',
+    fontSize: 15,
+    right: 50,
+    fontFamily: 'KronaOne-Regular'
+  },
+  text2: {
+    right: 50,
+    color: '#ffffff',
+    fontSize: 15,
+    textAlign: "justify"
+  },
+  text3: {
+    color: '#ffffff',
+    fontSize: 15,
+    textAlign: "justify"
   },
 });
-
 export default styles;

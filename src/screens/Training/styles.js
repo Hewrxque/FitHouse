@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#ffffff',
     fontSize: 20,
+    fontFamily: 'KronaOne-Regular',
   },
   image: {
     width: 320,
@@ -25,6 +26,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#00FF19',
     fontSize: 20,
+    fontFamily: 'KronaOne-Regular',
   },
   button: {
     width: 296,
@@ -35,7 +37,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     marginBottom: 20,
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   content: {
     width: '100%',

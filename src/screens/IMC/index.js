@@ -103,12 +103,13 @@ export default function IMC({navigation}) {
           />
           <Text style={styles.text2}>Masculino</Text>
         </View>
+        <View style={{padding: 10}}></View>
         <View>
           <Text style={styles.text2}>Digite sua altura:</Text>
           <TextInput
             keyboardType="number-pad"
             style={styles.input}
-            placeholder="ex: 1.79"
+            placeholder="ex: 179"
             value={altura}
             onChangeText={text => setAltura(text.replace(/\D/g, ''))}
           />

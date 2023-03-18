@@ -22,17 +22,26 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#ffffff',
     fontSize: 30,
+    fontFamily: 'KronaOne-Regular'
   },
   text1: {
     color: '#00FF19',
     fontSize: 15,
     textAlign: 'left',
+    fontFamily: 'KronaOne-Regular',
   },
   text2: {
     textAlign: 'left',
     color: '#ffffff',
     fontSize: 15,
     textAlign: "justify"
+  },
+  text3: {
+    textAlign: 'center',
+    color: '#ffffff',
+    fontSize: 10,
+    textAlign: "justify",
+    fontFamily: 'KronaOne-Regular'
   },
 });
 export default styles;

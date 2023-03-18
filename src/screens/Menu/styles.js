@@ -13,17 +13,19 @@ const styles = StyleSheet.create({
   arrow: {
     position: 'absolute',
     top: 20,
-    left: 11
+    left: 11,
   },
   text: {
     textAlign: 'center',
     color: '#00FF19',
     fontSize: 30,
+    fontFamily: 'KronaOne-Regular',
   },
   text2: {
     textAlign: 'center',
     color: '#FFFFFF',
     fontSize: 20,
+    fontFamily: 'KronaOne-Regular',
   },
   button: {
     backgroundColor: '#404040',
@@ -31,7 +33,7 @@ const styles = StyleSheet.create({
     height: 160,
     borderRadius: 10,
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
 });
 

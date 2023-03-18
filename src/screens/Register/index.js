@@ -94,13 +94,13 @@ export default function Register({navigation}) {
             <View style={{alignItems: 'center'}}>
               {email == '' || password == '' || checkValidEmail == true ? (
                 <TouchableOpacity disabled style={styles.button}>
-                  <Text style={styles.text}>REALIZAR CADASTRO</Text>
+                  <Text style={styles.text}>CADASTRAR</Text>
                 </TouchableOpacity>
               ) : (
                 <TouchableOpacity
                   style={styles.button2}
                   onPress={() => navigation.navigate('Login')}>
-                  <Text style={styles.text}>CONCLUIR CADASTRO</Text>
+                  <Text style={styles.text3}>CONCLUIR CADASTRO</Text>
                 </TouchableOpacity>
               )}
             </View>
