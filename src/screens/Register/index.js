@@ -14,7 +14,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 export default function Register({navigation}) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [seePassword, setSeePassword] = useState(false);
+  const [seePassword, setSeePassword] = useState(true);
   const [checkValidEmail, setCheckValidEmail] = useState(false);
 
   const handleCheckEmail = text => {
@@ -42,16 +42,21 @@ export default function Register({navigation}) {
 
         <Image style={styles.image} source={Logo} />
         <View style={{paddingTop: 100}}>
-          <View><Text style={styles.text2}>Nome de Usuário</Text></View>
+          <View>
+            <Text style={styles.text2}>Nome de Usuário:</Text>
+          </View>
+
           <View>
             <TextInput
               style={styles.input}
               placeholder="Digite um nome de usuário"
             />
           </View>
-          <View><Text style={styles.text2}>Email</Text></View>
+          <View style={{paddingTop: 10}}></View>
           <View>
-            
+            <Text style={styles.text2}>Email:</Text>
+          </View>
+          <View>
             <TextInput
               style={styles.input}
               placeholder="example@gmail.com"
@@ -64,7 +69,9 @@ export default function Register({navigation}) {
           ) : (
             <Text style={{color: 'red'}}></Text>
           )}
-         <View><Text style={styles.text2}>Senha</Text></View>
+          <View>
+            <Text style={styles.text2}>Senha:</Text>
+          </View>
           <View style={styles.wrapperInput}>
             <TextInput
               style={styles.input}
@@ -87,13 +94,13 @@ export default function Register({navigation}) {
             <View style={{alignItems: 'center'}}>
               {email == '' || password == '' || checkValidEmail == true ? (
                 <TouchableOpacity disabled style={styles.button}>
-                  <Text style={styles.text}>Realizar Cadastro</Text>
+                  <Text style={styles.text}>REALIZAR CADASTRO</Text>
                 </TouchableOpacity>
               ) : (
                 <TouchableOpacity
-                  style={styles.button}
+                  style={styles.button2}
                   onPress={() => navigation.navigate('Login')}>
-                  <Text style={styles.text}>Realizar Cadastro</Text>
+                  <Text style={styles.text}>CONCLUIR CADASTRO</Text>
                 </TouchableOpacity>
               )}
             </View>

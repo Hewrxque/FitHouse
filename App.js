@@ -7,11 +7,13 @@ import Menu from './src/screens/Menu';
 import Training from './src/screens/Training';
 import IMC from './src/screens/IMC';
 import FAQ from './src/screens/FAQ';
+import Check_Email from './src/screens/Check_Email';
+import Reset_Password from './src/screens/Reset_Password';
 import DataB from './src/screens/DataB';
-import T_A from './src/screens/Trainings/A'
-import T_B from './src/screens/Trainings/B'
-import T_C from './src/screens/Trainings/C'
-import T_D from './src/screens/Trainings/D'
+import T_A from './src/screens/Trainings/A';
+import T_B from './src/screens/Trainings/B';
+import T_C from './src/screens/Trainings/C';
+import T_D from './src/screens/Trainings/D';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
@@ -37,6 +39,20 @@ export default function App() {
         <Stack.Screen
           name="Login"
           component={Login}
+          options={{
+            headerShown: false,
+          }}
+        />
+         <Stack.Screen
+          name="Check_Email"
+          component={Check_Email}
+          options={{
+            headerShown: false,
+          }}
+        />
+         <Stack.Screen
+          name="Reset_Password"
+          component={Reset_Password}
           options={{
             headerShown: false,
           }}

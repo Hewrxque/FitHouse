@@ -12,22 +12,11 @@ import Logo from '../../assets/FitHouse.png';
 import styles from './styles';
 import Icon from 'react-native-vector-icons/Ionicons';
 export default function Login({navigation}) {
-  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [seePassword, setSeePassword] = useState(true);
-  const [checkValidEmail, setCheckValidEmail] = useState(false);
+  const [password1, setPassword1] = useState('');
+  const [seePassword1, setSeePassword1] = useState(true);
 
-  const handleCheckEmail = text => {
-    let re = /\S+@\S+\.\S+/;
-    let regex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
-
-    setEmail(text);
-    if (re.test(text) || regex.test(text)) {
-      setCheckValidEmail(false);
-    } else {
-      setCheckValidEmail(true);
-    }
-  };
   return (
     <ScrollView style={{height: '100%'}}>
       <SafeAreaView style={styles.container}>
@@ -42,24 +31,13 @@ export default function Login({navigation}) {
         <Image style={styles.image} source={Logo} />
         <View style={{paddingTop: 100}}>
           <View>
-            <Text style={styles.text2}>Email:</Text>
-            <TextInput
-              style={styles.input}
-              placeholder="example@gmail.com"
-              value={email}
-              onChangeText={handleCheckEmail}
-            />
+            <Text style={styles.text3}>DIGITE SUA NOVA SENHA</Text>
           </View>
-          {checkValidEmail ? (
-            <Text style={{color: 'red'}}>Email não encontrado</Text>
-          ) : (
-            <Text style={{color: 'red'}}></Text>
-          )}
           <Text style={styles.text2}>Senha:</Text>
           <View style={styles.wrapperInput}>
             <TextInput
               style={styles.input}
-              placeholder="Digite sua Senha"
+              placeholder="Digite sua senha"
               value={password}
               secureTextEntry={seePassword}
               onChangeText={text => setPassword(text)}
@@ -74,22 +52,36 @@ export default function Login({navigation}) {
               />
             </TouchableOpacity>
           </View>
-          <View>
-            <TouchableOpacity onPress={() => navigation.navigate('Check_Email')}>
-              <Text style={styles.text3}>Esqueci minha senha</Text>
+          <Text style={styles.text2}>Repita Senha:</Text>
+          <View style={styles.wrapperInput}>
+            <TextInput
+              style={styles.input}
+              placeholder="Digite sua senha"
+              value={password1}
+              secureTextEntry={seePassword1}
+              onChangeText={text => setPassword1(text)}
+            />
+            <TouchableOpacity
+              style={styles.wrapperIcon}
+              onPress={() => setSeePassword1(!seePassword1)}>
+              <Icon
+                name={seePassword1 ? 'eye-off-outline' : 'eye-outline'}
+                size={20}
+                color={'#ffffff'}
+              />
             </TouchableOpacity>
           </View>
           <View style={{paddingTop: 100}}>
             <View style={{alignItems: 'center'}}>
-              {email == '' || password == '' || checkValidEmail == true ? (
+              {password == '' || password1 == '' ? (
                 <TouchableOpacity disabled style={styles.button}>
-                  <Text style={styles.text}>LOGIN</Text>
+                  <Text style={styles.text}>CONFIRMAR</Text>
                 </TouchableOpacity>
               ) : (
                 <TouchableOpacity
                   style={styles.button2}
-                  onPress={() => navigation.navigate('Menu')}>
-                  <Text style={styles.text}>LOGIN</Text>
+                  onPress={() => navigation.navigate('Login')}>
+                  <Text style={styles.text}>ATUALIZAR SENHA</Text>
                 </TouchableOpacity>
               )}
             </View>

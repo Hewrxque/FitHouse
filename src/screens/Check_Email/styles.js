@@ -36,15 +36,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     elevation: 10,
   },
-  button2: {
-    width: 281,
-    height: 50,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#00FF19',
-    borderRadius: 10,
-    elevation: 10,
-  },
   text: {
     textAlign: 'center',
     color: '#181616',
@@ -56,19 +47,9 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
   text3: {
-    left: 200,
-    top: 5,
-    color: '#00FF19',
-    fontSize: 14,
-  },
-  wrapperInput: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  wrapperIcon: {
-    position: 'absolute',
-    right: 0,
-    padding: 10,
-  },
+    textAlign: 'center',
+    color: '#ffffff',
+    fontSize: 15,
+  }
 });
 export default styles;

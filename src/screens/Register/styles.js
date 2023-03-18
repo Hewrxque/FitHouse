@@ -36,6 +36,15 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     elevation: 10,
   },
+  button2: {
+    width: 281,
+    height: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#00FF19',
+    borderRadius: 10,
+    elevation: 10,
+  },
   text: {
     textAlign: 'center',
     color: '#181616',

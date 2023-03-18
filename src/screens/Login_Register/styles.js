@@ -34,12 +34,14 @@ const styles = StyleSheet.create({
     borderColor: '#00FF19',
     borderWidth: 2,
     marginBottom: 20,
+    justifyContent: "center"
   },
   button2: {
     backgroundColor: '#ffffff',
     width: 270,
     height: 40,
     borderRadius: 10,
+    justifyContent: "center"
   },
   content: {
     width: '100%',

@@ -56,10 +56,9 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
   text3: {
-    left: 200,
-    top: 5,
-    color: '#00FF19',
-    fontSize: 14,
+    textAlign: 'center',
+    color: '#ffffff',
+    fontSize: 16,
   },
   wrapperInput: {
     flexDirection: 'row',
