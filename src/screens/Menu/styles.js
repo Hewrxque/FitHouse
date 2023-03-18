@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
     color: '#00FF19',
     fontSize: 30,
     fontFamily: 'KronaOne-Regular',
+    top: 50
   },
   text2: {
     textAlign: 'center',
