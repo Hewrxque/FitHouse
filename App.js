@@ -33,98 +33,137 @@ export default function App() {
           name="Login_Register"
           component={Login_Register}
           options={{
-            headerShown: false,
+            headerShown: true,
+            headerTransparent: true,
+            title: '',
+            headerTintColor: '#00FF19',
           }}
         />
         <Stack.Screen
           name="Login"
           component={Login}
           options={{
-            headerShown: false,
+            headerShown: true,
+            headerTransparent: true,
+            title: '',
+            headerTintColor: '#00FF19',
           }}
         />
-         <Stack.Screen
+        <Stack.Screen
           name="Check_Email"
           component={Check_Email}
           options={{
-            headerShown: false,
+            headerShown: true,
+            headerTransparent: true,
+            title: '',
+            headerTintColor: '#00FF19',
           }}
         />
-         <Stack.Screen
+        <Stack.Screen
           name="Reset_Password"
           component={Reset_Password}
           options={{
-            headerShown: false,
+            headerShown: true,
+            headerTransparent: true,
+            title: '',
+            headerTintColor: '#00FF19',
           }}
         />
-          <Stack.Screen
+        <Stack.Screen
           name="FAQ"
           component={FAQ}
           options={{
-            headerShown: false,
+            headerShown: true,
+            headerTransparent: true,
+            title: '',
+            headerTintColor: '#00FF19',
           }}
         />
-          <Stack.Screen
+        <Stack.Screen
           name="DataB"
           component={DataB}
           options={{
-            headerShown: false,
+            headerShown: true,
+            headerTransparent: true,
+            title: '',
+            headerTintColor: '#00FF19',
           }}
         />
         <Stack.Screen
           name="Register"
           component={Register}
           options={{
-            headerShown: false,
+            headerShown: true,
+            headerTransparent: true,
+            title: '',
+            headerTintColor: '#00FF19',
           }}
         />
-          <Stack.Screen
+        <Stack.Screen
           name="IMC"
           component={IMC}
           options={{
-            headerShown: false,
+            headerShown: true,
+            headerTransparent: true,
+            title: '',
+            headerTintColor: '#00FF19',
           }}
         />
-         <Stack.Screen
+        <Stack.Screen
           name="Training"
           component={Training}
           options={{
-            headerShown: false,
+            headerShown: true,
+            headerTransparent: true,
+            title: '',
+            headerTintColor: '#00FF19',
           }}
         />
-          <Stack.Screen
+        <Stack.Screen
           name="Menu"
           component={Menu}
           options={{
             headerShown: false,
           }}
         />
-          <Stack.Screen
+        <Stack.Screen
           name="T_A"
           component={T_A}
           options={{
-            headerShown: false,
+            headerShown: true,
+            headerTransparent: true,
+            title: '',
+            headerTintColor: '#00FF19',
           }}
         />
-         <Stack.Screen
+        <Stack.Screen
           name="T_B"
           component={T_B}
           options={{
-            headerShown: false,
+            headerShown: true,
+            headerTransparent: true,
+            title: '',
+            headerTintColor: '#00FF19',
           }}
         />
-         <Stack.Screen
+        <Stack.Screen
           name="T_C"
           component={T_C}
           options={{
-            headerShown: false,
+            headerShown: true,
+            headerTransparent: true,
+            title: '',
+            headerTintColor: '#00FF19',
           }}
         />
-         <Stack.Screen
+        <Stack.Screen
           name="T_D"
           component={T_D}
           options={{
-            headerShown: false,
+            headerShown: true,
+            headerTransparent: true,
+            title: '',
+            headerTintColor: '#00FF19',
           }}
         />
       </Stack.Navigator>

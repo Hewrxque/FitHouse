@@ -34,13 +34,6 @@ const DATA = [
 export default function Menu({navigation}) {
   return (
     <SafeAreaView style={styles.container}>
-      <TouchableOpacity
-        style={styles.arrow}
-        onPress={() => {
-          navigation.goBack();
-        }}>
-        <Icon2 name={'arrow-back-outline'} size={40} color={'#ffffff'} />
-      </TouchableOpacity>
       <View style={{paddingTop: 50}} />
       <View>
         <Text style={styles.text}>Bom Treino</Text>

@@ -32,34 +32,23 @@ export default function Register({navigation}) {
   return (
     <ScrollView style={{height: '100%'}}>
       <SafeAreaView style={styles.container}>
-        <TouchableOpacity
-          style={styles.arrow}
-          onPress={() => {
-            navigation.goBack();
-          }}>
-          <Icon name={'arrow-back-outline'} size={40} color={'#ffffff'} />
-        </TouchableOpacity>
 
         <Image style={styles.image} source={Logo} />
         <View style={{paddingTop: 100}}>
-          <View>
-            <Text style={styles.text2}>Nome de Usuário:</Text>
-          </View>
 
           <View>
             <TextInput
               style={styles.input}
-              placeholder="Digite um nome de usuário"
+              placeholder="Nome"
             />
           </View>
-          <View style={{paddingTop: 10}}></View>
+          <View style={{padding: 10}}></View>
           <View>
-            <Text style={styles.text2}>Email:</Text>
           </View>
           <View>
             <TextInput
               style={styles.input}
-              placeholder="example@gmail.com"
+              placeholder="Email"
               value={email}
               onChangeText={handleCheckEmail}
             />
@@ -69,13 +58,10 @@ export default function Register({navigation}) {
           ) : (
             <Text style={{color: 'red'}}></Text>
           )}
-          <View>
-            <Text style={styles.text2}>Senha:</Text>
-          </View>
           <View style={styles.wrapperInput}>
             <TextInput
               style={styles.input}
-              placeholder="Digite sua Senha"
+              placeholder="Senha"
               value={password}
               secureTextEntry={seePassword}
               onChangeText={text => setPassword(text)}

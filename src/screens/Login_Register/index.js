@@ -1,18 +1,10 @@
 import React from 'react';
 import {Text, View, SafeAreaView, Image, TouchableOpacity} from 'react-native';
 import Logo from '../../assets/FitHouse.png';
-import Icon from 'react-native-vector-icons/Ionicons';
 import styles from './styles';
 export default function Login_Register({navigation}) {
   return (
     <SafeAreaView style={styles.container}>
-      <TouchableOpacity
-        style={styles.arrow}
-        onPress={() => {
-          navigation.goBack();
-        }}>
-        <Icon name={'arrow-back-outline'} size={40} color={'#ffffff'} />
-      </TouchableOpacity>
       <Image style={styles.image} source={Logo} />
       <View style={{paddingTop: 100}}>
         <View>

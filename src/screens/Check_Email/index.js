@@ -29,13 +29,6 @@ export default function Check_Email({navigation}) {
   return (
     <ScrollView style={{height: '100%'}}>
       <SafeAreaView style={styles.container}>
-        <TouchableOpacity
-          style={styles.arrow}
-          onPress={() => {
-            navigation.goBack();
-          }}>
-          <Icon name={'arrow-back-outline'} size={40} color={'#ffffff'} />
-        </TouchableOpacity>
         <Image style={styles.image} source={Logo} />
         <View style={{paddingTop: 80}} />
         <View>

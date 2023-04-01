@@ -31,21 +31,12 @@ export default function Login({navigation}) {
   return (
     <ScrollView style={{height: '100%'}}>
       <SafeAreaView style={styles.container}>
-        <TouchableOpacity
-          style={styles.arrow}
-          onPress={() => {
-            navigation.goBack();
-          }}>
-          <Icon name={'arrow-back-outline'} size={40} color={'#ffffff'} />
-        </TouchableOpacity>
-
         <Image style={styles.image} source={Logo} />
         <View style={{paddingTop: 100}}>
           <View>
-            <Text style={styles.text2}>Email:</Text>
             <TextInput
               style={styles.input}
-              placeholder="example@gmail.com"
+              placeholder="Email"
               value={email}
               onChangeText={handleCheckEmail}
             />
@@ -55,7 +46,6 @@ export default function Login({navigation}) {
           ) : (
             <Text style={{color: 'red'}}></Text>
           )}
-          <Text style={styles.text2}>Senha:</Text>
           <View style={styles.wrapperInput}>
             <TextInput
               style={styles.input}
@@ -75,7 +65,8 @@ export default function Login({navigation}) {
             </TouchableOpacity>
           </View>
           <View>
-            <TouchableOpacity onPress={() => navigation.navigate('Check_Email')}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Check_Email')}>
               <Text style={styles.text3}>Esqueci minha senha</Text>
             </TouchableOpacity>
           </View>

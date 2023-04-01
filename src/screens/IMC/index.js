@@ -82,13 +82,6 @@ export default function IMC({navigation}) {
   return (
     <ScrollView style={{height: '100%'}}>
       <SafeAreaView style={styles.container}>
-        <TouchableOpacity
-          style={styles.arrow}
-          onPress={() => {
-            navigation.goBack();
-          }}>
-          <Icon name={'arrow-back-outline'} size={40} color={'#ffffff'} />
-        </TouchableOpacity>
         <View style={{padding: 10, position: 'absolute', top: 120}}>
           <Text style={styles.text1}>Calcule seu IMC</Text>
         </View>

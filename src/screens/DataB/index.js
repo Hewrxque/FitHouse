@@ -5,14 +5,6 @@ import styles from './styles';
 export default function DataB({navigation}) {
   return (
     <SafeAreaView style={styles.container}>
-      
-      <TouchableOpacity
-          style={styles.arrow}
-          onPress={() => {
-            navigation.goBack();
-          }}>
-          <Icon name={'arrow-back-outline'} size={40} color={'#ffffff'} />
-        </TouchableOpacity>
    <View style={{bottom: 200}}>
      <Text style={styles.text} >Dados</Text>
     

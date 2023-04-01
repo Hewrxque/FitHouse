@@ -26,17 +26,10 @@ export default function FAQ({navigation}) {
   return (
     <ScrollView>
       <SafeAreaView style={styles.container}>
-        <TouchableOpacity
-          style={styles.arrow}
-          onPress={() => {
-            navigation.goBack();
-          }}>
-          <Icon name={'arrow-back-outline'} size={40} color={'#ffffff'} />
-        </TouchableOpacity>
         <View style={{padding: 50}} />
         <Image style={styles.image} source={Logo} resizeMode="contain" />
         <View style={{padding: 30}}>
-          <Text style={styles.text}>F.A.Q</Text>
+         
           <View style={{top: 30}}>
             <TouchableOpacity onPress={() => setQuestion1(!question1)}>
               <Text style={styles.text1}>O QUE É?</Text>
