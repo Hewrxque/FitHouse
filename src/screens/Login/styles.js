@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     elevation: 10,
   },
   button2: {
-    width: 281,
+    width: 300,
     height: 50,
     alignItems: 'center',
     justifyContent: 'center',
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     top: 5,
     marginLeft: 40,
     color: '#00FF19',
-    fontSize: 14,
+    fontSize: 10,
     fontFamily: 'KronaOne-Regular'
   },
   wrapperInput: {

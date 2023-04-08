@@ -40,11 +40,13 @@ export default function Login({navigation}) {
             value={email}
             onChangeText={handleCheckEmail}
           />
+           <View style={{marginRight: 200}}>
           {checkValidEmail ? ( //Validaçao de email
             <Text style={{color: 'red'}}>Email não encontrado</Text>
           ) : (
             <Text style={{color: 'red'}}></Text>
           )}
+          </View>
           <View style={styles.wrapperInput}>
             <TextInput
               style={styles.input}
@@ -63,7 +65,7 @@ export default function Login({navigation}) {
               />
             </TouchableOpacity>
           </View>
-          <View style={{marginLeft: 100}}>
+          <View style={{marginLeft: '40%'}}>
             <TouchableOpacity
               onPress={() => navigation.navigate('Check_Email')}>
               <Text style={styles.text3}>Esqueci minha senha</Text>
