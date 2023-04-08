@@ -8,7 +8,6 @@ import {
 } from 'react-native';
 import styles from './styles';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import Icon2 from 'react-native-vector-icons/Ionicons';
 const DATA = [
   {
     name: 'Treinos',
@@ -34,11 +33,10 @@ const DATA = [
 export default function Menu({navigation}) {
   return (
     <SafeAreaView style={styles.container}>
-      <View style={{paddingTop: 50}} />
-      <View>
+       <View style={styles.contentTitle}>
         <Text style={styles.text}>Bom Treino</Text>
-      </View>
-      <View style={{paddingTop: 100}} />
+        </View>
+        <View style={styles.content}>
       <FlatList
         data={DATA}
         numColumns={2}
@@ -56,6 +54,7 @@ export default function Menu({navigation}) {
           );
         }}
       />
+      </View>
     </SafeAreaView>
   );
 }

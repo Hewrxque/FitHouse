@@ -5,10 +5,22 @@ const {height, width} = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
     backgroundColor: '#181616',
-    paddingTop: 15,
+    height: height,
+    width: width,
+  },
+  contentTitle:{
+    flex: 0.3,
+    marginHorizontal: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  content:{
+    flex: 0.7,
+    marginHorizontal: 20,
+    marginVertical: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   arrow: {
     position: 'absolute',
