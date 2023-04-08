@@ -38,8 +38,8 @@ export default function Register({navigation}) {
         <View style={styles.content1}>
           <TextInput style={styles.input} placeholder="Nome" />
 
-          <View style={{padding: 10}}/>
-         
+          <View style={{padding: 10}} />
+
           <View>
             <TextInput
               style={styles.input}
@@ -61,7 +61,6 @@ export default function Register({navigation}) {
               secureTextEntry={seePassword}
               onChangeText={text => setPassword(text)}
             />
-          </View>
           <TouchableOpacity
             style={styles.wrapperIcon}
             onPress={() => setSeePassword(!seePassword)}>
@@ -71,6 +70,7 @@ export default function Register({navigation}) {
               color={'#ffffff'}
             />
           </TouchableOpacity>
+          </View>
         </View>
         <View style={styles.content2}>
           <View style={{alignItems: 'center'}}>
