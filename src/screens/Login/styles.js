@@ -1,36 +1,35 @@
 import {StyleSheet, Dimensions} from 'react-native';
-const {height} = Dimensions.get('window');
+const {height, width} = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 20,
     backgroundColor: '#181616',
-    alignItems: 'center',
-    justifyContent: 'center',
     height: height,
+    width: width,
+  },
+  content:{
+    flex: 1,
+    marginHorizontal: 20,
+    marginVertical: 20,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   image: {
-    width: 320,
-    height: 70,
-  },
-  arrow: {
-    position: 'absolute',
-    top: 20,
-    left: 11,
+    width: '90%',
+    height: '10%',
   },
   input: {
-    backgroundColor: '#1E1E1E',
-    width: 380,
+    backgroundColor: '#181616',
+    width: '100%',
     height: 52,
     borderRadius: 8,
     borderColor: '#00FF19',
     borderWidth: 2,
-    paddingHorizontal: 8,
     fontSize: 12,
     fontFamily: 'KronaOne-Regular'
   },
   button: {
-    width: 281,
+    width: 300,
     height: 50,
     alignItems: 'center',
     justifyContent: 'center',
@@ -60,12 +59,12 @@ const styles = StyleSheet.create({
     fontFamily: 'KronaOne-Regular'
   },
   text3: {
-    left: 160,
+    textAlign: 'left',
     top: 5,
+    marginLeft: 40,
     color: '#00FF19',
     fontSize: 14,
     fontFamily: 'KronaOne-Regular'
-    
   },
   wrapperInput: {
     flexDirection: 'row',

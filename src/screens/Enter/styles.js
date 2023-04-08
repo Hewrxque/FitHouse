@@ -6,12 +6,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#181616',
+    height: height,
+    width: width,
   },
   content:{
     flex: 1,
     marginHorizontal: 20,
     marginVertical: 20,
-    height: height,
     justifyContent: 'center',
     alignItems: 'center',
   },

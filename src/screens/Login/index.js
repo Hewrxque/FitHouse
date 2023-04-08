@@ -31,17 +31,16 @@ export default function Login({navigation}) {
   return (
     <ScrollView style={{height: '100%'}}>
       <SafeAreaView style={styles.container}>
-        <Image style={styles.image} source={Logo} />
-        <View style={{paddingTop: 100}}>
-          <View>
-            <TextInput
-              style={styles.input}
-              placeholder="Email"
-              value={email}
-              onChangeText={handleCheckEmail}
-            />
-          </View>
-          {checkValidEmail ? (
+        <View style={styles.content}>
+          <Image style={styles.image} source={Logo} />
+          <View style={{padding: 10}} />
+          <TextInput
+            style={styles.input}
+            placeholder="Email"
+            value={email}
+            onChangeText={handleCheckEmail}
+          />
+          {checkValidEmail ? ( //Validaçao de email
             <Text style={{color: 'red'}}>Email não encontrado</Text>
           ) : (
             <Text style={{color: 'red'}}></Text>
@@ -64,26 +63,25 @@ export default function Login({navigation}) {
               />
             </TouchableOpacity>
           </View>
-          <View>
+          <View style={{marginLeft: 100}}>
             <TouchableOpacity
               onPress={() => navigation.navigate('Check_Email')}>
               <Text style={styles.text3}>Esqueci minha senha</Text>
             </TouchableOpacity>
           </View>
-          <View style={{paddingTop: 100}}>
-            <View style={{alignItems: 'center'}}>
-              {email == '' || password == '' || checkValidEmail == true ? (
-                <TouchableOpacity disabled style={styles.button}>
-                  <Text style={styles.text}>LOGIN</Text>
-                </TouchableOpacity>
-              ) : (
-                <TouchableOpacity
-                  style={styles.button2}
-                  onPress={() => navigation.navigate('Menu')}>
-                  <Text style={styles.text}>LOGIN</Text>
-                </TouchableOpacity>
-              )}
-            </View>
+          <View style={{padding: 10}} />
+          <View style={{alignItems: 'center'}}>
+            {email == '' || password == '' || checkValidEmail == true ? (
+              <TouchableOpacity disabled style={styles.button}>
+                <Text style={styles.text}>LOGIN</Text>
+              </TouchableOpacity>
+            ) : (
+              <TouchableOpacity
+                style={styles.button2}
+                onPress={() => navigation.navigate('Menu')}>
+                <Text style={styles.text}>LOGIN</Text>
+              </TouchableOpacity>
+            )}
           </View>
         </View>
       </SafeAreaView>
