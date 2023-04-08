@@ -16,9 +16,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   image: {
-    width: 320,
-    height: 70,
-    paddingTop: 15,
+    width: '90%',
+    height: '10%',
   },
   text: {
     textAlign: 'center',

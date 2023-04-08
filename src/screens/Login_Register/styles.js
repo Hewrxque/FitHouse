@@ -11,6 +11,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     height: height,
   },
+  content:{
+    flex: 1,
+    marginHorizontal: 20,
+    marginVertical: 20,
+    height: height,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   image: {
     width: 320,
     height: 70,
@@ -30,8 +38,8 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: '#1E1E1E',
-    width: 270,
-    height: 40,
+    width: 300,
+    height: 50,
     borderRadius: 10,
     borderColor: '#00FF19',
     borderWidth: 2,
@@ -40,8 +48,8 @@ const styles = StyleSheet.create({
   },
   button2: {
     backgroundColor: '#ffffff',
-    width: 270,
-    height: 40,
+    width: 300,
+    height: 50,
     borderRadius: 10,
     justifyContent: "center"
   },
