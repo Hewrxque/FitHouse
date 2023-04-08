@@ -32,19 +32,13 @@ export default function Register({navigation}) {
   return (
     <ScrollView style={{height: '100%'}}>
       <SafeAreaView style={styles.container}>
-
         <Image style={styles.image} source={Logo} />
         <View style={{paddingTop: 100}}>
-
           <View>
-            <TextInput
-              style={styles.input}
-              placeholder="Nome"
-            />
+            <TextInput style={styles.input} placeholder="Nome" />
           </View>
           <View style={{padding: 10}}></View>
-          <View>
-          </View>
+          <View></View>
           <View>
             <TextInput
               style={styles.input}
