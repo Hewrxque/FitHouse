@@ -32,13 +32,14 @@ export default function Register({navigation}) {
   return (
     <ScrollView style={{height: '100%'}}>
       <SafeAreaView style={styles.container}>
-        <Image style={styles.image} source={Logo} />
-        <View style={{paddingTop: 100}}>
-          <View>
-            <TextInput style={styles.input} placeholder="Nome" />
-          </View>
-          <View style={{padding: 10}}></View>
-          <View></View>
+        <View style={styles.content}>
+          <Image style={styles.image} source={Logo} />
+        </View>
+        <View style={styles.content1}>
+          <TextInput style={styles.input} placeholder="Nome" />
+
+          <View style={{padding: 10}}/>
+         
           <View>
             <TextInput
               style={styles.input}
@@ -60,30 +61,30 @@ export default function Register({navigation}) {
               secureTextEntry={seePassword}
               onChangeText={text => setPassword(text)}
             />
-            <TouchableOpacity
-              style={styles.wrapperIcon}
-              onPress={() => setSeePassword(!seePassword)}>
-              <Icon
-                name={seePassword ? 'eye-off-outline' : 'eye-outline'}
-                size={20}
-                color={'#ffffff'}
-              />
-            </TouchableOpacity>
           </View>
-          <View style={{paddingTop: 60}}>
-            <View style={{alignItems: 'center'}}>
-              {email == '' || password == '' || checkValidEmail == true ? (
-                <TouchableOpacity disabled style={styles.button}>
-                  <Text style={styles.text}>CADASTRAR</Text>
-                </TouchableOpacity>
-              ) : (
-                <TouchableOpacity
-                  style={styles.button2}
-                  onPress={() => navigation.navigate('Login')}>
-                  <Text style={styles.text3}>CONCLUIR CADASTRO</Text>
-                </TouchableOpacity>
-              )}
-            </View>
+          <TouchableOpacity
+            style={styles.wrapperIcon}
+            onPress={() => setSeePassword(!seePassword)}>
+            <Icon
+              name={seePassword ? 'eye-off-outline' : 'eye-outline'}
+              size={20}
+              color={'#ffffff'}
+            />
+          </TouchableOpacity>
+        </View>
+        <View style={styles.content2}>
+          <View style={{alignItems: 'center'}}>
+            {email == '' || password == '' || checkValidEmail == true ? (
+              <TouchableOpacity disabled style={styles.button}>
+                <Text style={styles.text}>CADASTRAR</Text>
+              </TouchableOpacity>
+            ) : (
+              <TouchableOpacity
+                style={styles.button2}
+                onPress={() => navigation.navigate('Login')}>
+                <Text style={styles.text3}>CONCLUIR CADASTRO</Text>
+              </TouchableOpacity>
+            )}
           </View>
         </View>
       </SafeAreaView>
