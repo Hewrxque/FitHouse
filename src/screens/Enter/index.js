@@ -5,13 +5,13 @@ import styles from './styles';
 export default function Enter({navigation}) {
   return (
     <SafeAreaView style={styles.container}>
-      <View style={{padding: 50}}>
+      <View style={styles.content}>
         <Image style={styles.image} source={Logo} />
-      </View>
-      <View>
+      <View style={{padding: 10}}/>
         <TouchableOpacity onPress={() => navigation.navigate('Login_Register')} style={styles.button}>
           <Text style={styles.text}>COMEÇAR</Text>
         </TouchableOpacity>
+    
       </View>
     </SafeAreaView>
   );
