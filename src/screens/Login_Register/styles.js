@@ -9,17 +9,24 @@ const styles = StyleSheet.create({
     height: height,
     width: width,
   },
-  content: {
-    flex: 1,
+  content:{
+    flex: 0.5,
     marginHorizontal: 20,
     marginVertical: 20,
-    height: height,
     justifyContent: 'center',
     alignItems: 'center',
+  //  backgroundColor: '#FF00FF',
+  },
+  content1:{
+    flex: 0.5,
+    marginHorizontal: 20,
+    marginVertical: 20,
+    alignItems: 'center',
+  //  backgroundColor: '#FFFFFF',
   },
   image: {
     width: '90%',
-    height: '10%',
+    height: 70,
   },
   text: {
     textAlign: 'center',

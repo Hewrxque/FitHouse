@@ -10,24 +10,21 @@ const styles = StyleSheet.create({
   content:{
     flex: 0.3,
     marginHorizontal: 20,
-    marginVertical: 20,
+    marginVertical: 10,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#FF00FF',
   },
   content1:{
     flex: 0.4,
     marginHorizontal: 20,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#FFFFFF',
   },
   content2:{
     flex: 0.3,
     marginHorizontal: 20,
     marginVertical: 20,
     alignItems: 'center',
-    backgroundColor: '#00FF19',
   },
   image: {
     width: '90%',
