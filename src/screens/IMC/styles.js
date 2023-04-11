@@ -1,22 +1,34 @@
 import {StyleSheet, Dimensions} from 'react-native';
-const {height} = Dimensions.get('window');
+const {height, width} = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 20,
     backgroundColor: '#181616',
-    alignItems: 'center',
-    justifyContent: 'center',
     height: height,
+    width: width,
+  },
+  content: {
+    flex: 0.3,
+    marginHorizontal: 20,
+    marginVertical: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  content1: {
+    flex: 0.4,
+    marginHorizontal: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  content2: {
+    flex: 0.3,
+    marginHorizontal: 20,
+    marginVertical: 20,
+    alignItems: 'center',
   },
   image: {
     width: 262,
     height: 44,
-  },
-  arrow: {
-    position: 'absolute',
-    top: 20,
-    left: 11,
   },
   input: {
     backgroundColor: '#1E1E1E',
@@ -27,7 +39,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     paddingHorizontal: 8,
     fontSize: 15,
-    fontFamily: 'KronaOne-Regular'
+    fontFamily: 'KronaOne-Regular',
   },
   button: {
     width: 281,
@@ -37,25 +49,31 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
     borderRadius: 10,
     elevation: 10,
-    
   },
   text1: {
     textAlign: 'center',
     color: '#ffffff',
     fontSize: 30,
-    fontFamily: 'KronaOne-Regular'
+    fontFamily: 'KronaOne-Regular',
+    marginTop: 90
   },
   text: {
     textAlign: 'center',
     color: '#181616',
     fontSize: 20,
-    fontFamily: 'KronaOne-Regular'
+    fontFamily: 'KronaOne-Regular',
   },
   text2: {
     textAlign: 'left',
     color: '#ffffff',
     fontSize: 15,
-    fontFamily: 'KronaOne-Regular'
+    fontFamily: 'KronaOne-Regular',
+  },
+  text3: {
+    marginRight: 150,
+    color: '#ffffff',
+    fontSize: 15,
+    fontFamily: 'KronaOne-Regular',
   },
   wrapperInput: {
     flexDirection: 'row',
@@ -71,8 +89,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 10,
-    position: 'absolute',
-    top: 220,
   },
 });
 export default styles;

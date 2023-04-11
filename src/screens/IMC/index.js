@@ -82,23 +82,22 @@ export default function IMC({navigation}) {
   return (
     <ScrollView style={{height: '100%'}}>
       <SafeAreaView style={styles.container}>
-        <View style={{padding: 10, position: 'absolute', top: 120}}>
+        <View style={styles.content}>
           <Text style={styles.text1}>Calcule seu IMC</Text>
         </View>
-        <View style={styles.grouprow}>
-          <Text style={styles.text2}>Feminino</Text>
-          <Switch
-            trackColor={{false: '#f257e8', true: '#5649e6'}}
-            thumbColor={genero ? '#5649e6' : '#f257e8'}
-            ios_backgroundColor="#3d543d"
-            onValueChange={toglleSwitch}
-            value={genero}
-          />
-          <Text style={styles.text2}>Masculino</Text>
-        </View>
-        <View style={{padding: 10}}></View>
-        <View>
-          <Text style={styles.text2}>Digite sua altura:</Text>
+        <View style={styles.content1}>
+          <View style={styles.grouprow}>
+            <Text style={styles.text2}>Feminino</Text>
+            <Switch
+              trackColor={{false: '#f257e8', true: '#5649e6'}}
+              thumbColor={genero ? '#5649e6' : '#f257e8'}
+              ios_backgroundColor="#3d543d"
+              onValueChange={toglleSwitch}
+              value={genero}
+            />
+            <Text style={styles.text2}>Masculino</Text>
+          </View>
+          <Text style={styles.text3}>Digite sua altura:</Text>
           <TextInput
             keyboardType="number-pad"
             style={styles.input}
@@ -106,10 +105,8 @@ export default function IMC({navigation}) {
             value={altura}
             onChangeText={text => setAltura(text.replace(/\D/g, ''))}
           />
-        </View>
-        <View style={{padding: 10}}/>
-        <View>
-          <Text style={styles.text2}>Digite seu peso:</Text>
+
+          <Text style={styles.text3}>Digite seu peso:</Text>
           <TextInput
             keyboardType="number-pad"
             style={styles.input}
@@ -118,8 +115,7 @@ export default function IMC({navigation}) {
             onChangeText={text => setPeso(text.replace(/\D/g, ''))}
           />
         </View>
-        <View style={{padding: 30}}/>
-        <View >
+        <View style={styles.content2}>
           <TouchableOpacity onPress={handleCalcular} style={styles.button}>
             <Text style={styles.text}>Calcule</Text>
           </TouchableOpacity>
