@@ -13,34 +13,26 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f03'
   },
   content1:{
     flex: 0.4,
     marginHorizontal: 20,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f05433'
   },
   content2:{
     flex: 0.3,
     marginHorizontal: 20,
     marginVertical: 20,
     alignItems: 'center',
-    backgroundColor: '#f93'
   },
   image: {
-    width: 320,
-    height: 70,
-  },
-  arrow: {
-    position: 'absolute',
-    top: 20,
-    left: 11,
+    width: '90%',
+    height: 75,
   },
   input: {
     backgroundColor: '#1E1E1E',
-    width: 380,
+    width: 370,
     height: 52,
     borderRadius: 8,
     borderColor: '#00FF19',
@@ -75,8 +67,9 @@ const styles = StyleSheet.create({
   text3: {
     textAlign: 'center',
     color: '#ffffff',
-    fontSize: 12,
-    fontFamily: 'KronaOne-Regular'
+    fontSize: 10,
+    fontFamily: 'KronaOne-Regular',
+    padding: 20
   }
 });
 export default styles;

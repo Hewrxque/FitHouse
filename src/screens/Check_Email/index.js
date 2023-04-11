@@ -10,7 +10,6 @@ import {
 } from 'react-native';
 import Logo from '../../assets/FitHouse.png';
 import styles from './styles';
-import Icon from 'react-native-vector-icons/Ionicons';
 export default function Check_Email({navigation}) {
   const [email, setEmail] = useState('');
   const [checkValidEmail, setCheckValidEmail] = useState(false);
@@ -30,41 +29,38 @@ export default function Check_Email({navigation}) {
     <ScrollView style={{height: '100%'}}>
       <SafeAreaView style={styles.container}>
         <View style={styles.content}>
-        <Image style={styles.image} source={Logo} />
+          <Image style={styles.image} source={Logo} />
         </View>
-        
+
         <View style={styles.content1}>
           <Text style={styles.text3}>
             VOCÊ RECEBERÁ UM LINK POR EMAIL PARA CONFIRMAR SUA NOVA SENHA
           </Text>
-      
-      
-        <View>
-          <Text style={styles.text2}>Email:</Text>
-          <TextInput
-            style={styles.input}
-            placeholder="example@gmail.com"
-            placeholderTextColor={'#ffffff'}
-            value={email}
-            onChangeText={handleCheckEmail}
-          />
+
+          <View>
+            <Text style={styles.text2}>Email:</Text>
+            <TextInput
+              style={styles.input}
+              placeholder="example@gmail.com"
+              placeholderTextColor={'#ffffff'}
+              value={email}
+              onChangeText={handleCheckEmail}
+            />
+          </View>
+          {checkValidEmail ? (
+            <Text style={{color: 'red'}}>Digite um email válido</Text>
+          ) : (
+            <Text style={{color: 'red'}}></Text>
+          )}
         </View>
-        {checkValidEmail ? (
-          <Text style={{color: 'red'}}>Digite um email válido</Text>
-        ) : (
-          <Text style={{color: 'red'}}></Text>
-        )}
-          </View>
-          <View style={styles.content2}>
-        
-          <View style={{alignItems: 'center'}}>
-            <TouchableOpacity style={styles.button}
-              onPress={() => {
-                navigation.navigate('Reset_Password');
-              }}>
-              <Text style={styles.text}>ENVIAR</Text>
-            </TouchableOpacity>
-          </View>
+        <View style={styles.content2}>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => {
+              navigation.navigate('Reset_Password');
+            }}>
+            <Text style={styles.text}>ENVIAR</Text>
+          </TouchableOpacity>
         </View>
       </SafeAreaView>
     </ScrollView>

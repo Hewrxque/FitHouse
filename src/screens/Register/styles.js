@@ -29,14 +29,10 @@ const styles = StyleSheet.create({
     width: '90%',
     height: 75,
   },
-  arrow: {
-    position: 'absolute',
-    top: 20,
-    left: 11,
-  },
+
   input: {
     backgroundColor: '#1E1E1E',
-    width: 380,
+    width: 370,
     height: 52,
     borderRadius: 8,
     borderColor: '#00FF19',
