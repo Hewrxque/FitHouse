@@ -29,19 +29,22 @@ export default function Check_Email({navigation}) {
   return (
     <ScrollView style={{height: '100%'}}>
       <SafeAreaView style={styles.container}>
+        <View style={styles.content}>
         <Image style={styles.image} source={Logo} />
-        <View style={{paddingTop: 80}} />
-        <View>
+        </View>
+        
+        <View style={styles.content1}>
           <Text style={styles.text3}>
             VOCÊ RECEBERÁ UM LINK POR EMAIL PARA CONFIRMAR SUA NOVA SENHA
           </Text>
-        </View>
-        <View style={{paddingTop: 20}} />
+      
+      
         <View>
           <Text style={styles.text2}>Email:</Text>
           <TextInput
             style={styles.input}
             placeholder="example@gmail.com"
+            placeholderTextColor={'#ffffff'}
             value={email}
             onChangeText={handleCheckEmail}
           />
@@ -51,7 +54,9 @@ export default function Check_Email({navigation}) {
         ) : (
           <Text style={{color: 'red'}}></Text>
         )}
-        <View style={{paddingTop: 100}}>
+          </View>
+          <View style={styles.content2}>
+        
           <View style={{alignItems: 'center'}}>
             <TouchableOpacity style={styles.button}
               onPress={() => {

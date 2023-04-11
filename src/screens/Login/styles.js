@@ -38,7 +38,9 @@ const styles = StyleSheet.create({
     borderColor: '#00FF19',
     borderWidth: 2,
     fontSize: 12,
-    fontFamily: 'KronaOne-Regular'
+    fontFamily: 'KronaOne-Regular',
+    color: '#fff',
+    paddingHorizontal: 8
   },
   button: {
     width: 300,

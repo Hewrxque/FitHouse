@@ -28,6 +28,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     fontSize: 12,
     fontFamily: 'KronaOne-Regular',
+    color: '#fff',
+    paddingHorizontal: 8
   },
   button: {
     width: 281,
