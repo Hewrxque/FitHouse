@@ -42,7 +42,6 @@ export default function Check_Email({navigation}) {
             <TextInput
               style={styles.input}
               placeholder="example@gmail.com"
-              placeholderTextColor={'#ffffff'}
               value={email}
               onChangeText={handleCheckEmail}
             />
