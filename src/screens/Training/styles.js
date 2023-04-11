@@ -5,17 +5,23 @@ const {height, width} = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 20,
     backgroundColor: '#181616',
-    alignItems: 'center',
-    justifyContent: 'center',
     height: height,
+    width: width,
+  },
+  content1:{
+    flex: 1,
+    marginHorizontal: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginVertical: 20
   },
   text1: {
     textAlign: 'center',
     color: '#ffffff',
     fontSize: 20,
     fontFamily: 'KronaOne-Regular',
+    bottom: 30
   },
   image: {
     width: 320,
