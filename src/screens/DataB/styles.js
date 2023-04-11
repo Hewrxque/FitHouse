@@ -1,22 +1,24 @@
 import {StyleSheet, Dimensions} from 'react-native';
-const {height} = Dimensions.get('window');
+const {height, width} = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 20,
     backgroundColor: '#181616',
-    alignItems: 'center',
-    justifyContent: 'center',
     height: height,
+    width: width,
   },
-  image: {
-    width: 320,
-    height: 70,
+  content:{
+    flex: 0.2,
+    marginHorizontal: 20,
+    marginVertical: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-  arrow: {
-    position: 'absolute',
-    top: 20,
-    left: 11
+  content1:{
+    flex: 0.8,
+    marginHorizontal: 20,
+    alignItems: 'center',
+    marginVertical: 20,
   },
   text: {
     textAlign: 'center',
