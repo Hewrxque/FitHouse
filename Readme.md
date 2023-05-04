@@ -10,8 +10,21 @@ code .
 
 npm i --force
 
+react-native run-android #para Android
+
+- Tecnologias Utilizadas
+
+React Native
+
+React Navigation
+
+Redux
+
+AsyncStorage
+
 - Bibliotecas utilizadas
 
 react-native-vector-icons
 
 react-native-splash-screen
+
