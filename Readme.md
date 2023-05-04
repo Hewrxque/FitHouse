@@ -1,16 +1,16 @@
-Pra utilização 
+- Como Usar 
 
-Git init
+    Git init
 
-git clone https://github.com/Hewrxque/FitHouse.git
+    git clone https://github.com/Hewrxque/FitHouse.git
 
-cd FitHouse
+    cd FitHouse
 
-code .
+    code .
 
-npm i --force
+    npm i --force
 
-react-native run-android #para Android
+    react-native run-android #para Android
 
 - Tecnologias Utilizadas
 
@@ -30,3 +30,6 @@ react-native run-android #para Android
 
     react-native-splash-screen
 
+- Design do Figma
+
+    https://www.figma.com/file/MDuQU45KcruXen0EplZCnC/FitHouse?type=design&node-id=0-1&t=RXoFRLwppbJQjWXv-0
