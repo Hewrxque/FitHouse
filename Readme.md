@@ -14,17 +14,19 @@ react-native run-android #para Android
 
 - Tecnologias Utilizadas
 
-React Native
+    React Native
 
-React Navigation
+    React Navigation
 
-Redux
+    Redux
 
-AsyncStorage
+    AsyncStorage
 
 - Bibliotecas utilizadas
 
-react-native-vector-icons
+    react-naviagtion/react 
 
-react-native-splash-screen
+    react-native-vector-icons
+
+    react-native-splash-screen
 
