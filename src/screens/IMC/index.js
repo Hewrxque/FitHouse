@@ -11,6 +11,7 @@ import {
   StatusBar,
 } from 'react-native';
 import styles from './styles';
+import BottomNav from '../../components/BottonNav';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 export default function IMC({navigation}) {
@@ -119,6 +120,9 @@ export default function IMC({navigation}) {
           <TouchableOpacity onPress={handleCalcular} style={styles.button}>
             <Text style={styles.text}>Calcule</Text>
           </TouchableOpacity>
+        </View>
+        <View>
+          <BottomNav activepage={'IMC'} navigation={navigation} />
         </View>
       </SafeAreaView>
     </ScrollView>

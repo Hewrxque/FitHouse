@@ -8,7 +8,7 @@ export default function Enter({navigation}) {
       <View style={styles.content}>
         <Image style={styles.image} source={Logo} />
       <View style={{padding: 10}}/>
-        <TouchableOpacity onPress={() => navigation.navigate('Login_Register')} style={styles.button}>
+        <TouchableOpacity onPress={() => navigation.navigate('Training')} style={styles.button}>
           <Text style={styles.text}>COMEÇAR</Text>
         </TouchableOpacity>
     
