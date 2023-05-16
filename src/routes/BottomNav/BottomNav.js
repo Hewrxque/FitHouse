@@ -56,7 +56,7 @@ export default function BottomTab({navigation}) {
         },
         tabBarLabelPosition: 'beside-icon',
         tabBarActiveTintColor: '#00FF00',
-        tabBarInactiveTintColor: '#FFFFFF',
+        tabBarInactiveTintColor: '#000000',
         tabBarLabel: '',
       })}>
       <Tab.Screen name="DataB" component={DataB} />
