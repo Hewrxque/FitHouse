@@ -9,7 +9,7 @@ import {
   Linking,
 } from 'react-native';
 import styles from './styles';
-import Logo from '../../assets/FitHouse.png';
+import Logo from '../../../assets/FitHouse.png';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 export default function FAQ({navigation}) {

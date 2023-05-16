@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, Image, SafeAreaView, TouchableOpacity} from 'react-native';
-import Logo from '../../assets/FitHouse.png';
+import Logo from '../../../assets/FitHouse.png';
 import styles from './styles';
 export default function Enter({navigation}) {
   return (
@@ -8,7 +8,7 @@ export default function Enter({navigation}) {
       <View style={styles.content}>
         <Image style={styles.image} source={Logo} />
       <View style={{padding: 10}}/>
-        <TouchableOpacity onPress={() => navigation.navigate('Training')} style={styles.button}>
+        <TouchableOpacity onPress={() => navigation.navigate('BottomNav')} style={styles.button}>
           <Text style={styles.text}>COMEÇAR</Text>
         </TouchableOpacity>
     

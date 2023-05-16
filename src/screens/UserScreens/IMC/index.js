@@ -11,7 +11,7 @@ import {
   StatusBar,
 } from 'react-native';
 import styles from './styles';
-import BottomNav from '../../components/BottonNav';
+import BottomNav from '../../../components/BottonNav';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 export default function IMC({navigation}) {
