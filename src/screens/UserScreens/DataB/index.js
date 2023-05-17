@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, Image, SafeAreaView, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import BottomNav from '../../../components/BottonNav';
+
 import styles from './styles';
 export default function DataB({navigation}) {
   return (
@@ -23,9 +23,6 @@ export default function DataB({navigation}) {
           <Text style={styles.text1}>Altura:</Text>
         </View>
       </View>
-      <View>
-          <BottomNav activepage={'DataB'} navigation={navigation} />
-        </View>
     </SafeAreaView>
   );
 }

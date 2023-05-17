@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, Image, SafeAreaView, TouchableOpacity} from 'react-native';
 import Logo from '../../assets/FitHouse.png';
 import styles from './styles';
-import BottomNav from '../../components/BottonNav';
+
 import Icon from 'react-native-vector-icons/Ionicons';
 export default function Training({navigation}) {
   return (
@@ -35,9 +35,6 @@ export default function Training({navigation}) {
         </TouchableOpacity>
 
       </View>
-      <View>
-          <BottomNav activepage={'Training'} navigation={navigation} />
-        </View>
     </SafeAreaView>
   );
 }
