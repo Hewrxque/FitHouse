@@ -8,7 +8,7 @@ import {
   TextInput,
   ScrollView,
 } from 'react-native';
-import Logo from '../../../assets/FitHouse.png';
+import Logo from '../../../assets/FitWorkout.png';
 import styles from './styles';
 import Icon from 'react-native-vector-icons/Ionicons';
 export default function Login({navigation}) {
@@ -18,14 +18,18 @@ export default function Login({navigation}) {
   const [seePassword1, setSeePassword1] = useState(true);
 
   return (
-    <ScrollView style={{height: '100%'}}>
+    <ScrollView>
       <SafeAreaView style={styles.container}>
-        <Image style={styles.image} source={Logo} />
-        <View style={{top: 50}}>
-          <Text style={styles.text3}>DIGITE SUA NOVA SENHA</Text>
+       
+      <View style={styles.contentImage}>
+          <Image style={styles.image} source={Logo} />
+        </View>
+      
 
-          <View style={{padding: 10}} />
-          <Text style={styles.text2}>Senha:</Text>
+        <View style={styles.content1}>
+          <Text style={styles.textTitle}>DIGITE SUA NOVA SENHA</Text>
+
+          <Text style={styles.textPassword}>Senha:</Text>
           <View style={styles.wrapperInput}>
             <TextInput
               style={styles.input}
@@ -44,8 +48,8 @@ export default function Login({navigation}) {
               />
             </TouchableOpacity>
           </View>
-          <View style={{padding: 10}} />
-          <Text style={styles.text2}>Repita Senha:</Text>
+
+          <Text style={styles.textRepeat}>Repita sua Senha:</Text>
           <View style={styles.wrapperInput}>
             <TextInput
               style={styles.input}
@@ -64,20 +68,20 @@ export default function Login({navigation}) {
               />
             </TouchableOpacity>
           </View>
-          <View style={{paddingTop: 100}}>
-            <View style={{alignItems: 'center'}}>
-              {password == '' || password1 == '' ? (
-                <TouchableOpacity disabled style={styles.button}>
-                  <Text style={styles.text}>CONFIRMAR</Text>
-                </TouchableOpacity>
-              ) : (
-                <TouchableOpacity
-                  style={styles.button2}
-                  onPress={() => navigation.navigate('Login')}>
-                  <Text style={styles.text}>ATUALIZAR SENHA</Text>
-                </TouchableOpacity>
-              )}
-            </View>
+        </View>
+        <View style={styles.content2}>
+          <View style={{alignItems: 'center'}}>
+            {password == '' || password1 == '' ? (
+              <TouchableOpacity disabled style={styles.buttonInactive}>
+                <Text style={styles.textButton}>CONFIRMAR</Text>
+              </TouchableOpacity>
+            ) : (
+              <TouchableOpacity
+                style={styles.buttonActive}
+                onPress={() => navigation.navigate('Login')}>
+                <Text style={styles.textButton}>ATUALIZAR SENHA</Text>
+              </TouchableOpacity>
+            )}
           </View>
         </View>
       </SafeAreaView>

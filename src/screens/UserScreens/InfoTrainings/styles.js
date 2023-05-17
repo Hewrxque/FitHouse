@@ -1,53 +1,51 @@
 import {StyleSheet, Dimensions} from 'react-native';
-
 const {height, width} = Dimensions.get('window');
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#181616',
+    backgroundColor: '#404040',
     height: height,
     width: width,
   },
-  contentTitle:{
-    flex: 0.3,
-    marginHorizontal: 20,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   content:{
-    flex: 0.7,
+    flex: 0.2,
     marginHorizontal: 20,
     marginVertical: 10,
     justifyContent: 'center',
     alignItems: 'center',
   },
-  arrow: {
-    position: 'absolute',
-    top: 20,
-    left: 11,
+  content1:{
+    flex: 0.8,
+    marginHorizontal: 20,
+    alignItems: 'center',
+    marginVertical: 20,
   },
   text: {
     textAlign: 'center',
-    color: '#00FF19',
+    color: '#ffffff',
     fontSize: 30,
+    width: '90%',
     fontFamily: 'KronaOne-Regular',
-    top: 50
+    borderBottomColor: '#FFFFFF',
+    borderBottomWidth: 1
+  },
+  text1: {
+    color: '#FFFFFF',
+    fontSize: 15,
+    marginRight: '78%',
+    fontFamily: 'KronaOne-Regular',
+    marginVertical: 20,
   },
   text2: {
-    textAlign: 'center',
-    color: '#FFFFFF',
-    fontSize: 20,
-    fontFamily: 'KronaOne-Regular',
+    right: 50,
+    color: '#ffffff',
+    fontSize: 15,
+    textAlign: "justify"
   },
-  button: {
-    backgroundColor: '#404040',
-    width: 160,
-    height: 160,
-    borderRadius: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
+  text3: {
+    color: '#ffffff',
+    fontSize: 15,
+    textAlign: "justify"
   },
 });
-
 export default styles;

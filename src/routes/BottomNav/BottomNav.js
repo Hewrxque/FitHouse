@@ -4,7 +4,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import DataB from '../../screens/UserScreens/DataB'
 import IMC from '../../screens/UserScreens/IMC'
 import Trainings from '../../screens/Trainings'
-
+import InfoTrainings from '../../screens/UserScreens/InfoTrainings'
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 
@@ -12,29 +12,29 @@ import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs
 
 const data = 'DataB';
 const imc = 'IMC';
-const trainings = 'Trainings';
+const training = 'Training';
 
 const Tab = createBottomTabNavigator();
-/* 
-function TopTab({navigation}) {
+const Lab = createMaterialTopTabNavigator();
+function Training({navigation}) {
   return (
     <Lab.Navigator
     screenOptions={{
       tabBarLabelStyle: { fontSize: 12 },
-      tabBarStyle: { backgroundColor: '#00FF00' },
-      tabBarActiveTintColor: '#FFFFFF',
+      tabBarStyle: { backgroundColor: '#FFFFFF' },
+      tabBarActiveTintColor: '#FF0000',
         tabBarInactiveTintColor: '#000000',
-        tabBarIndicatorStyle: {backgroundColor: '#fff'},
+        tabBarIndicatorStyle: {backgroundColor: '#FF0000'},
         tabBarPressColor: '#000'
     }}
   >
-      <Lab.Screen name="Player" component={Player} />
-      <Lab.Screen name="Playlist" component={MusicsPlaylist} />
+      <Lab.Screen name="Trainings" component={Trainings} />
+      <Lab.Screen name="InfoTrainings" component={InfoTrainings} />
     </Lab.Navigator>
   );
 }
- */
-export default function BottomTab({navigation}) {
+
+export default function BottomNav({navigation}) {
   return (
     <Tab.Navigator
       initialRouteName={Trainings}
@@ -48,7 +48,7 @@ export default function BottomTab({navigation}) {
             iconName = focused ? 'calculator' : 'calculator';
           } else if (rn === data) {
             iconName = focused ? 'address-book' : 'address-book';
-          } else if (rn === trainings) {
+          } else if (rn === training) {
             iconName = focused ? 'fire-alt' : 'fire-alt';
           }
 
@@ -61,7 +61,7 @@ export default function BottomTab({navigation}) {
       })}>
       <Tab.Screen name="DataB" component={DataB} />
       <Tab.Screen name="IMC" component={IMC} />
-      <Tab.Screen name="Trainings" component={Trainings} />
+      <Tab.Screen name="Training" component={Training} />
     </Tab.Navigator>
   );
 }

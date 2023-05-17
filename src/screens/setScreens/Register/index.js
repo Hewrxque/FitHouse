@@ -8,7 +8,7 @@ import {
   TextInput,
   ScrollView,
 } from 'react-native';
-import Logo from '../../../assets/FitHouse.png';
+import Logo from '../../../assets/FitWorkout.png';
 import styles from './styles';
 import Icon from 'react-native-vector-icons/Ionicons';
 export default function Register({navigation}) {

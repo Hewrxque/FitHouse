@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
-import Logo from '../../assets/FitHouse.png'
+import Logo from '../../assets/FitWorkout.png'
 
 export default function Splash({navigation}) {
     
@@ -28,8 +28,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  
   logo: {
-    width: 200,
-    height: 200,
+    width: '70%',
+    height: '12%',
   },
 });

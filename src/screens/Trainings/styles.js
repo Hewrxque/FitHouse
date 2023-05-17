@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
   text: {
     textAlign: 'center',
-    color: '#00FF19',
+    color: '#000000',
     fontSize: 20,
     fontFamily: 'KronaOne-Regular',
   },
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     height: 67,
     borderRadius: 8,
     backgroundColor: '#404040',
-    borderColor: '#00FF19',
+    borderColor: '#FFFFFF',
     borderWidth: 2,
     marginBottom: 20,
     alignItems: 'center',

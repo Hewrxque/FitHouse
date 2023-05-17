@@ -1,14 +1,12 @@
 import React from 'react';
 
 import Enter from '../../screens/setScreens/Enter';
-import Login_Register from '../../screens/setScreens/Login';
 import Login from '../../screens/setScreens/Login';
 import Register from '../../screens/setScreens/Register';
 import Check_Email from '../../screens/setScreens/Check_Email';
 import Reset_Password from '../../screens/setScreens/Reset_Password';
 import FAQ from '../../screens/setScreens/FAQ';
 
-import Menu from '../../screens/Menu';
 import IMC from '../../screens/UserScreens/IMC';
 import DataB from '../../screens/UserScreens/DataB';
 
@@ -29,13 +27,11 @@ export default function StackScreen({}) {
   return (
     <Navigator initialRouteName="Splash" screenOptions={{headerShown: false}}>
       <Screen name="Enter" component={Enter} />
-      <Screen name="Login_Register" component={Login_Register} />
       <Screen name="Login" component={Login} />
       <Screen name="Register" component={Register} />
       <Screen name="Check_Email" component={Check_Email} />
       <Screen name="Reset_Password" component={Reset_Password} />
       <Screen name="FAQ" component={FAQ} />
-      <Screen name="Menu" component={Menu} />
       <Screen name="IMC" component={IMC} />
       <Screen name="DataB" component={DataB} />
       <Screen name="Training" component={Training} />

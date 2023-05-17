@@ -3,7 +3,7 @@ const {height, width} = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#181616',
+    backgroundColor: '#404040',
     height: height,
     width: width,
   },
@@ -27,16 +27,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   image: {
-    width: '90%',
-    height: 75,
+    width: '100%',
+    height: '60%',
+    marginTop: '40%'
   },
   input: {
-    backgroundColor: '#1E1E1E',
     width: 370,
     height: 52,
-    borderRadius: 8,
-    borderColor: '#00FF19',
-    borderWidth: 2,
+    borderBottomColor: '#FFFFFF',
+    borderBottomWidth: 2,
     paddingHorizontal: 8,
     fontSize: 12,
     fontFamily: 'KronaOne-Regular',

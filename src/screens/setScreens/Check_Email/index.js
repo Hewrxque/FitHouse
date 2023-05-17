@@ -8,7 +8,7 @@ import {
   TextInput,
   ScrollView,
 } from 'react-native';
-import Logo from '../../../assets/FitHouse.png';
+import Logo from '../../../assets/FitWorkout.png';
 import styles from './styles';
 export default function Check_Email({navigation}) {
   const [email, setEmail] = useState('');

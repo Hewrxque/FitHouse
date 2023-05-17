@@ -31,12 +31,11 @@ const styles = StyleSheet.create({
     height: 44,
   },
   input: {
-    backgroundColor: '#1E1E1E',
+  
     width: 350,
     height: 52,
-    borderRadius: 8,
-    borderColor: '#F20000',
-    borderWidth: 2,
+    borderBottomColor: '#FFFFFF',
+    borderBottomWidth: 2,
     paddingHorizontal: 8,
     fontSize: 15,
     marginVertical: 5,

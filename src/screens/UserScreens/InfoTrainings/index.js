@@ -3,7 +3,7 @@ import {View, Text, Image, SafeAreaView, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import styles from './styles';
-export default function DataB({navigation}) {
+export default function InfoTrainings({navigation}) {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
