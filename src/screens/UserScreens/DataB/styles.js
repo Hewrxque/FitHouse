@@ -24,13 +24,17 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#ffffff',
     fontSize: 30,
-    fontFamily: 'KronaOne-Regular'
+    width: '90%',
+    fontFamily: 'KronaOne-Regular',
+    borderBottomColor: '#FFFFFF',
+    borderBottomWidth: 1
   },
   text1: {
-    color: '#00FF19',
+    color: '#FFFFFF',
     fontSize: 15,
-    right: 150,
-    fontFamily: 'KronaOne-Regular'
+    marginRight: '78%',
+    fontFamily: 'KronaOne-Regular',
+    marginVertical: 20,
   },
   text2: {
     right: 50,

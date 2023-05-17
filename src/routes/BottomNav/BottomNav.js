@@ -5,7 +5,7 @@ import DataB from '../../screens/UserScreens/DataB'
 import IMC from '../../screens/UserScreens/IMC'
 import Trainings from '../../screens/Trainings'
 
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 
 /* const Lab = createMaterialTopTabNavigator(); */
@@ -45,17 +45,17 @@ export default function BottomTab({navigation}) {
           let iconName;
           let rn = route.name;
           if (rn === imc) {
-            iconName = focused ? 'headphones' : 'headphones';
+            iconName = focused ? 'calculator' : 'calculator';
           } else if (rn === data) {
-            iconName = focused ? 'music-box-multiple' : 'music-box-multiple';
+            iconName = focused ? 'address-book' : 'address-book';
           } else if (rn === trainings) {
-            iconName = focused ? 'playlist-play' : 'playlist-play';
+            iconName = focused ? 'fire-alt' : 'fire-alt';
           }
 
           return <Icon name={iconName} size={size} color={color} />;
         },
         tabBarLabelPosition: 'beside-icon',
-        tabBarActiveTintColor: '#00FF00',
+        tabBarActiveTintColor: '#F20000',
         tabBarInactiveTintColor: '#000000',
         tabBarLabel: '',
       })}>
